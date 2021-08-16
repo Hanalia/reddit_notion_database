@@ -2,12 +2,11 @@
 
 An auto-updated notion datatable built with reddit api, notion api and github actions  
 
-**Page URL** : https://wooden-hortensia-2e9.notion.site/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa  
+### [Page URL](https://wooden-hortensia-2e9.notion.site/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa)
 <img width="617" alt="Notion_65nHYrPc2k" src="https://user-images.githubusercontent.com/75914909/129502693-f51bac43-3094-4f5e-91a5-8c98d4861c19.png">
 <img width="568" alt="Notion_3iEWU0hDnz" src="https://user-images.githubusercontent.com/75914909/129502698-748c6fbe-0338-430e-a4d5-26b3f5b9e015.png">
 
-
-**Database URL** : https://wooden-hortensia-2e9.notion.site/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63  
+### [Database URL](https://wooden-hortensia-2e9.notion.site/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63)
 
 <img width="968" alt="Notion_oCON1LAJa5" src="https://user-images.githubusercontent.com/75914909/129502705-6e5f34ab-7ae9-4f22-bec4-83723430536e.png">
 

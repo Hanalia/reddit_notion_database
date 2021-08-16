@@ -1,6 +1,6 @@
 ## Reddit & Notion Integrated Database
 
->  A notion database template that automatically updates main subreddit posts everyday.  
+>  A notion database template that automatically updates your favorite subreddit posts everyday.  
 >  Built with PRAW, Notion Api and Github actions  
 
 ### [Page URL](https://wooden-hortensia-2e9.notion.site/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa)

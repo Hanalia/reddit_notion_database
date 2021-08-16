@@ -10,7 +10,9 @@ REDDIT_CLIENT_ID = os.environ['REDDIT_CLIENT_ID']
 REDDIT_CLIENT_SECRET = os.environ['REDDIT_CLIENT_SECRET']
 REDDIT_USER_AGENT = os.environ['REDDIT_USER_AGENT']
 
-DATABASE_KEY = 'f93f03ce6289490c9fd819000d888cf3'
+DATABASE_KEY = os.environ['DATABASE_KEY']
+PAGE_KEY = os.environ['PAGE_KEY']
+
 
 def create_notionpost(title, score, subreddit, contenturl, created_date, actualurl):
 
@@ -38,7 +40,7 @@ def get_subreddits():
         'Notion-Version': '2021-07-27',
         'Authorization': f"Bearer {NOTION_API_KEY}",
     }
-    response = requests.get('https://api.notion.com/v1/blocks/7f1b12c4517a4d2eb4157a8db89d74aa/children?page_size=10', headers=headers)
+    response = requests.get(f'https://api.notion.com/v1/blocks/{PAGE_KEY}/children?page_size=10', headers=headers)
     mylist = response.json()['results'][1]['bulleted_list_item']['text'][0]['plain_text'].split()
     return mylist
 
@@ -52,7 +54,7 @@ def reddit_notion(subreddits):
         'Notion-Version': '2021-07-27',
         'Content-Type': 'application/json',
     }
-    response = requests.post('https://api.notion.com/v1/databases/f93f03ce6289490c9fd819000d888cf3/query', headers=headers)
+    response = requests.post(f'https://api.notion.com/v1/databases/{DATABASE_KEY}/query', headers=headers)
     myneeded = response.json()['results']
     myset = set()
 

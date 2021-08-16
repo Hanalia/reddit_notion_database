@@ -5,9 +5,7 @@ name: Python package
 # on: push
 on:
   schedule:
-    # 실제 스케쥴 작업이 시작될 cron을 등록하면 됩니다.
-    # 크론은 https://crontab.guru/ 여기서 확인하면 좋을 것 같습니다.
-    # 이 크론은 everyday 00 am 
+    # This cron starts everyday 00:00 UTC
     - cron:  '0 0 * * *'
 jobs:
   build:
@@ -43,15 +41,6 @@ jobs:
         REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
         REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
-    # - name: Commits
-    #   run: |
-    #     git config --local user.email "davethe@naver.com"
-    #     git config --local user.name "REC_Auto" 
-    #     git add ./src/mydata/github_recdata.json
-    #     git commit -m "Auto - Update data with Scraping"
-    #     git pull origin master
-    # - name: Push
-    #   uses: ad-m/github-push-action@master
-    #   with:
-    #     branch: 'master'
-    #     github_token: ${{ secrets.GITHUB_TOKEN }} 
+        DATABASE_KEY: ${{ secrets.DATABASE_KEY }}
+        PAGE_KEY: ${{ secrets.PAGE_KEY }}
+        

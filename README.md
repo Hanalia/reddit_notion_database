@@ -1,8 +1,9 @@
 ## Reddit & Notion Integrated datatable
 
 An auto-updated notion datatable built with reddit api, notion api and github actions  
-See demo : https://wooden-hortensia-2e9.notion.site/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa  
-datatable url : https://wooden-hortensia-2e9.notion.site/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63  
+**See Demo** : https://wooden-hortensia-2e9.notion.site/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa  
+**Database URL** : https://wooden-hortensia-2e9.notion.site/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63  
+
 <img width="959" alt="Notion_01h2HmFyaR" src="https://user-images.githubusercontent.com/75914909/129497997-cc34d67a-5738-432d-a9cd-a0c12abf90ef.png">
 
 ## What it does

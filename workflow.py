@@ -6,6 +6,9 @@ import praw
 
 
 NOTION_API_KEY= os.environ['NOTION_API_KEY']
+REDDIT_CLIENT_ID = os.environ['REDDIT_CLIENT_ID']
+REDDIT_CLIENT_SECRET = os.environ['REDDIT_CLIENT_SECRET']
+REDDIT_USER_AGENT = os.environ['REDDIT_USER_AGENT']
 
 DATABASE_KEY = 'f93f03ce6289490c9fd819000d888cf3'
 
@@ -60,9 +63,9 @@ def reddit_notion(subreddits):
         except:
             pass
     
-    reddit = praw.Reddit(client_id= 'DzwOmGMsUugt5Q',
-                        client_secret= 'aT3Bhzk8bFqFj7e4Jizu4GaXRAZJDw',
-                        user_agent= 'hanalia_kr_tutorial_learning')
+    reddit = praw.Reddit(client_id= REDDIT_CLIENT_ID,
+                        client_secret= REDDIT_CLIENT_SECRET,
+                        user_agent= REDDIT_USER_AGENT)
     for subreddit in subreddits:
         try:
             test_reddit = reddit.subreddit(subreddit).top("month", limit = 10)

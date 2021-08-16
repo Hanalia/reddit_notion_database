@@ -40,6 +40,9 @@ jobs:
         python3 workflow.py
       env:
         NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+        REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
     # - name: Commits
     #   run: |
     #     git config --local user.email "davethe@naver.com"

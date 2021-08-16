@@ -3,8 +3,9 @@
 An auto-updated notion datatable built with reddit api, notion api and github actions  
 
 ### [Page URL](https://wooden-hortensia-2e9.notion.site/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa)
-<img width="617" alt="Notion_65nHYrPc2k" src="https://user-images.githubusercontent.com/75914909/129502693-f51bac43-3094-4f5e-91a5-8c98d4861c19.png">
-<img width="568" alt="Notion_3iEWU0hDnz" src="https://user-images.githubusercontent.com/75914909/129502698-748c6fbe-0338-430e-a4d5-26b3f5b9e015.png">
+
+<img width="578" alt="Notion_FSwc69yNgj" src="https://user-images.githubusercontent.com/75914909/129502887-072fb390-de0d-4eeb-a7f3-be91ffa6954c.png">
+<img width="581" alt="Notion_YWg0a9H8Pe" src="https://user-images.githubusercontent.com/75914909/129502890-c34525aa-40c6-43e7-b4b0-5b62a582c1ea.png">
 
 ### [Database URL](https://wooden-hortensia-2e9.notion.site/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63)
 
@@ -32,9 +33,9 @@ Schedule the above tasks (1 ~ 3) so that it is performed automatically, every da
 
 ### Initial Setup
 Clone this repository
-Duplicate both notion templates 
-  a) page template https://www.notion.so/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa  
-  b) database template https://www.notion.so/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63  
+Duplicate both notion templates   
+  **Page template** https://www.notion.so/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa    
+  **Database template** https://www.notion.so/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63  
 
 ### Setting your secrets
 Set the repository secrets for the below :  

@@ -34,7 +34,7 @@ Duplicate both notion templates
 ### Setting your secrets
 Set the repository secrets for the below :
 You can follow this [link](https://www.edwardthomson.com/blog/github_actions_11_secrets.html) for instructions
-| Secrets        | Values                          | Description              |
+| Secrets  | Values                          | Description              |
 |----------------|---------------------------------|--------------------------|
 | `NOTION_API_KEY`     | your notion integration secrets | Create your own integration [here](https://developers.notion.com/) and get the API key.  Make sure to add integration from your notion page and datatable → this allows the integration to access your page and datatable |
 |`REDDIT_CLIENT_ID`  `REDDIT_CLIENT_SECRET` `REDDIT_USER_AGENT`     | your reddit api client id, secret, and user-agent                          | Refer to this [link](https://github.com/reddit-archive/reddit/wiki/OAuth2#getting-started)                     |

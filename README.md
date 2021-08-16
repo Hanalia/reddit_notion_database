@@ -1,4 +1,4 @@
-# Reddit & Notion Integrated datatable
+## Reddit & Notion Integrated datatable
 
 An auto-updated notion datatable built with reddit api, notion api and github actions  
 See demo : https://wooden-hortensia-2e9.notion.site/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa  
@@ -25,10 +25,23 @@ datatable url : https://wooden-hortensia-2e9.notion.site/f93f03ce6289490c9fd8190
 
 ## How to set up your own datatable
 
-1. Clone this repository
-2. Duplicate both notion templates 
+### Initial Setup
+Clone this repository
+Duplicate both notion templates 
   a) page template https://www.notion.so/Reddit-Collections-7f1b12c4517a4d2eb4157a8db89d74aa
   b) database template https://www.notion.so/f93f03ce6289490c9fd819000d888cf3?v=ec3daf44b6fb4a73b9fdaed9e704be63
+
+### Setting your secrets
+Set the repository secrets for the below :
+You can follow this [link](https://www.edwardthomson.com/blog/github_actions_11_secrets.html) for instructions
+| Secrets        | Values                          | Description              |
+|----------------|---------------------------------|--------------------------|
+| `NOTION_API_KEY`     | your notion integration secrets | Create your own integration [here](https://developers.notion.com/) and get the API key.  Make sure to add integration from your notion page and datatable → this allows the integration to access your page and datatable |
+|`REDDIT_CLIENT_ID`  `REDDIT_CLIENT_SECRET` `REDDIT_USER_AGENT`     | your reddit api client id, secret, and user-agent                          | Refer to this [link](https://github.com/reddit-archive/reddit/wiki/OAuth2#getting-started)                     |
+
+| `DATABASE_KEY`   |   your notion database id                              | the id is in the url of your database. For example, from my url the database id is 'f93f03ce6289490c9fd819000d888cf3' (after /, before right before ?)                   |
+| `PAGE_KEY`  | your notion page id                   | the id is in the url of your page. For example, from my url the page id is '7f1b12c4517a4d2eb4157a8db89d74aa' (after /, before right before ?) |
+
 
 3. Set the repository secrets for the below :
  - You can follow this [link](https://www.edwardthomson.com/blog/github_actions_11_secrets.html) for instructions

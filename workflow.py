@@ -19,7 +19,7 @@ def create_notionpost(title, score, subreddit, contenturl, created_date, actualu
     headers = {
         'Authorization': f"Bearer {NOTION_API_KEY}",
         'Content-Type': 'application/json',
-        'Notion-Version': '2021-07-27',
+        'Notion-Version': '2021-08-16',
     }
     data = { "parent": { "database_id": DATABASE_KEY }, "properties": { 
         "title": {"title": [ { "text": { "content": title } } ] },
@@ -37,7 +37,7 @@ def create_notionpost(title, score, subreddit, contenturl, created_date, actualu
 ## checks the notion block and retrieve subreddits in form of list of strings
 def get_subreddits():
     headers = {
-        'Notion-Version': '2021-07-27',
+        'Notion-Version': '2021-08-16',
         'Authorization': f"Bearer {NOTION_API_KEY}",
     }
     response = requests.get(f'https://api.notion.com/v1/blocks/{PAGE_KEY}/children?page_size=10', headers=headers)
@@ -51,7 +51,7 @@ def reddit_notion(subreddits):
 
     headers = {
         'Authorization': f"Bearer {NOTION_API_KEY}",
-        'Notion-Version': '2021-07-27',
+        'Notion-Version': '2021-08-16',
         'Content-Type': 'application/json',
     }
     response = requests.post(f'https://api.notion.com/v1/databases/{DATABASE_KEY}/query', headers=headers)
